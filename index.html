@@ -1,11 +1,27 @@
-def draw_square(size):
-    """Fonction pour dessiner un carré en ASCII"""
-    for _ in range(size):
-        print('+' * size)
-
-# Dessiner des carrés de différentes tailles
-sizes = range(3, 8, 2)  # Différentes tailles de carrés
-
-for size in sizes:
-    draw_square(size)
-    print()  # Espacement entre les carrés
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuite en Avant : La Philosophie en 60 Secondes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>Fuite en Avant : La Philosophie en 60 Secondes</h1>
+        <div id="timer">Temps restant : <span id="time">60</span>s</div>
+        <div id="questionContainer">
+            <p id="question">Appuyez sur "Démarrer" pour commencer</p>
+            <div id="answers"></div>
+        </div>
+        <button id="startButton">Démarrer</button>
+        <div id="score">Score : 0</div>
+        <div id="gameOver" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Votre score final : <span id="finalScore">0</span></p>
+            <button id="restartButton">Recommencer</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
