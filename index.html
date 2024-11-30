@@ -1,27 +1,11 @@
-from PIL import Image, ImageDraw
+def draw_square(size):
+    """Fonction pour dessiner un carré en ASCII"""
+    for _ in range(size):
+        print('+' * size)
 
-# Créer une image blanche de taille 500x500 pixels
-image_size = (500, 500)
-image = Image.new("RGB", image_size, "white")
-draw = ImageDraw.Draw(image)
-
-# Fonction pour dessiner un carré
-def draw_square(draw, position, size):
-    top_left = position
-    bottom_right = (position[0] + size, position[1] + size)
-    draw.rectangle([top_left, bottom_right], outline="black", width=3)
-
-# Dessiner des carrés dans une boîte
-start_x, start_y = 50, 50  # Position de départ
-spacing = 10  # Espacement entre les carrés
-sizes = range(20, 150, 30)  # Différentes tailles de carrés
+# Dessiner des carrés de différentes tailles
+sizes = range(3, 8, 2)  # Différentes tailles de carrés
 
 for size in sizes:
-    draw_square(draw, (start_x, start_y), size)
-    start_x += size + spacing  # Espacement horizontal
-
-# Sauvegarder l'image générée dans un fichier
-image.save("squares_image.png")
-
-# Afficher l'image dans le répertoire courant (facultatif)
-image.show()
+    draw_square(size)
+    print()  # Espacement entre les carrés
