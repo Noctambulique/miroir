@@ -1,0 +1,36 @@
+import turtle
+
+# Configuration de la fenêtre
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Création de la tortue pour dessiner
+pen = turtle.Turtle()
+pen.speed(0)
+
+# Fonction pour dessiner un carré de taille donnée
+def draw_square(size):
+    for _ in range(4):
+        pen.forward(size)
+        pen.right(90)
+
+# Fonction pour dessiner des carrés dans une boîte
+def draw_squares_in_box():
+    # Positionner la tortue dans le coin supérieur gauche
+    pen.penup()
+    pen.goto(-200, 200)
+    pen.pendown()
+
+    # Dessiner des carrés dans la boîte
+    for size in range(20, 150, 30):  # Carrés de différentes tailles
+        draw_square(size)
+        pen.penup()
+        pen.forward(size + 10)  # Espacement entre les carrés
+        pen.pendown()
+
+# Appeler la fonction pour dessiner les carrés
+draw_squares_in_box()
+
+# Terminer le dessin
+pen.hideturtle()
+screen.mainloop()
