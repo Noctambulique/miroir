@@ -1,36 +1,27 @@
-import turtle
+from PIL import Image, ImageDraw
 
-# Configuration de la fenêtre
-screen = turtle.Screen()
-screen.bgcolor("white")
+# Créer une image blanche de taille 500x500 pixels
+image_size = (500, 500)
+image = Image.new("RGB", image_size, "white")
+draw = ImageDraw.Draw(image)
 
-# Création de la tortue pour dessiner
-pen = turtle.Turtle()
-pen.speed(0)
+# Fonction pour dessiner un carré
+def draw_square(draw, position, size):
+    top_left = position
+    bottom_right = (position[0] + size, position[1] + size)
+    draw.rectangle([top_left, bottom_right], outline="black", width=3)
 
-# Fonction pour dessiner un carré de taille donnée
-def draw_square(size):
-    for _ in range(4):
-        pen.forward(size)
-        pen.right(90)
+# Dessiner des carrés dans une boîte
+start_x, start_y = 50, 50  # Position de départ
+spacing = 10  # Espacement entre les carrés
+sizes = range(20, 150, 30)  # Différentes tailles de carrés
 
-# Fonction pour dessiner des carrés dans une boîte
-def draw_squares_in_box():
-    # Positionner la tortue dans le coin supérieur gauche
-    pen.penup()
-    pen.goto(-200, 200)
-    pen.pendown()
+for size in sizes:
+    draw_square(draw, (start_x, start_y), size)
+    start_x += size + spacing  # Espacement horizontal
 
-    # Dessiner des carrés dans la boîte
-    for size in range(20, 150, 30):  # Carrés de différentes tailles
-        draw_square(size)
-        pen.penup()
-        pen.forward(size + 10)  # Espacement entre les carrés
-        pen.pendown()
+# Sauvegarder l'image générée dans un fichier
+image.save("squares_image.png")
 
-# Appeler la fonction pour dessiner les carrés
-draw_squares_in_box()
-
-# Terminer le dessin
-pen.hideturtle()
-screen.mainloop()
+# Afficher l'image dans le répertoire courant (facultatif)
+image.show()
