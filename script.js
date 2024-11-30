@@ -24,8 +24,8 @@ const questions = [
         correctAnswer: 0
     },
     {
-        question: "Qui est le philosophe de l'absurde ?",
-        answers: ["Camus", "Nietzsche", "Platon", "Spinoza"],
+        question: "Que signifie le terme 'solipsisme' ?",
+        answers: ["La croyance que l'on est la seule réalité existante", "La négation de toute existence", "Le libre arbitre de l'individu", "La recherche du bonheur personnel"],
         correctAnswer: 0
     },
     {
@@ -34,33 +34,33 @@ const questions = [
         correctAnswer: 1
     },
     {
-        question: "Que signifie 'l'existence précède l'essence' ?",
-        answers: ["Cela signifie que nous sommes définis par notre essence", "Cela signifie que nous existons avant de donner un sens à notre vie", "Cela signifie que l'homme n'a pas de liberté", "Cela signifie que l'essence est une illusion"],
-        correctAnswer: 1
-    },
-    {
-        question: "Qu'est-ce que le matérialisme dialectique ?",
-        answers: ["Une théorie de Marx et Engels", "Une idée de Kant", "Une pensée empiriste", "Une notion de Descartes"],
+        question: "Quel est le concept central de la philosophie de Jean-Paul Sartre ?",
+        answers: ["L'existence précède l'essence", "La volonté de puissance", "Le surhomme", "Le nihilisme"],
         correctAnswer: 0
     },
     {
-        question: "Quel philosophe a popularisé le concept de surhomme ?",
-        answers: ["Hegel", "Kierkegaard", "Nietzsche", "Marx"],
-        correctAnswer: 2
+        question: "Qui a dit 'L'homme est la mesure de toutes choses' ?",
+        answers: ["Protagoras", "Platon", "Socrate", "Aristote"],
+        correctAnswer: 0
+    },
+    {
+        question: "Qui est l'auteur de 'Le deuxième sexe' ?",
+        answers: ["Simone de Beauvoir", "Marie Curie", "Hannah Arendt", "Simone Weil"],
+        correctAnswer: 0
     },
     {
         question: "Qu'est-ce que le cogito selon Descartes ?",
-        answers: ["Je pense, donc je suis", "Je doute, donc je suis", "Je vis, donc je suis", "Je veux, donc je suis"],
-        correctAnswer: 0
+        answers: ["Je veux, donc je suis", "Je doute, donc je suis", "Je vis, donc je suis", "Je pense, donc je suis"],
+        correctAnswer: 3
+    },
+        {
+        question: "Qui est le philosophe le plus ancien : Friedrich Nietzsche ou Arthur Schopenhauer ?",
+        answers: ["Friedrich Nietzsche", "Arthur Schopenhauer"],
+        correctAnswer: 1
     },
     {
         question: "Quel philosophe a développé la théorie du contrat social ?",
         answers: ["Platon", "Rousseau", "Hobbes", "Locke"],
-        correctAnswer: 1
-    },
-    {
-        question: "Qu'est-ce que le scepticisme ?",
-        answers: ["La recherche de la vérité par la science", "La pensée qu'il est impossible de connaître quoi que ce soit avec certitude", "L'idée que tout est déterminé", "La croyance en une vérité absolue"],
         correctAnswer: 1
     },
     {
@@ -70,17 +70,7 @@ const questions = [
     },
     {
         question: "Qui a écrit 'L'être et le néant' ?",
-        answers: ["Sartre", "Heidegger", "Camus", "Nietzsche"],
-        correctAnswer: 0
-    },
-    {
-        question: "Quel philosophe a introduit le concept de 'l'ataraxie' ?",
-        answers: ["Épicure", "Zénon", "Socrate", "Platon"],
-        correctAnswer: 0
-    },
-    {
-        question: "Quel est le thème principal de la philosophie de Spinoza ?",
-        answers: ["La liberté individuelle", "Le dualisme de l'âme et du corps", "Le panthéisme", "Le relativisme moral"],
+        answers: ["Camus", "Heidegger", "Sartre", "Nietzsche"],
         correctAnswer: 2
     },
     {
@@ -88,21 +78,16 @@ const questions = [
         answers: ["La croyance en un sens de la vie", "L'absence de sens et de valeur universelle", "L'optimisme radical", "La croyance en un Dieu omnipotent"],
         correctAnswer: 1
     },
-    {
-        question: "Qui a théorisé l'idée de la 'main invisible' ?",
-        answers: ["Marx", "Smith", "Keynes", "Ricardo"],
+        {
+        question: "Vrai ou faux : Selon Platon, la réalité sensible est la seule réalité qui existe.",
+        answers: ["Faux", "Vrai"],
+        correctAnswer: 0
+    },
+        {
+        question: "Qui est le philosophe le plus ancien : René Descartes ou Thomas Hobbes ?",
+        answers: ["René Descartes", "Thomas Hobbes"],
         correctAnswer: 1
     },
-    {
-        question: "Quelle est la théorie principale de John Rawls sur la justice ?",
-        answers: ["La justice comme équité", "La justice comme égalité absolue", "La justice comme utilitarisme", "La justice comme libre marché"],
-        correctAnswer: 0
-    },
-    {
-        question: "Quel philosophe a dit 'L'homme est condamné à être libre' ?",
-        answers: ["Sartre", "Nietzsche", "Kierkegaard", "Camus"],
-        correctAnswer: 0
-    }
 ];
 
 function startGame() {
