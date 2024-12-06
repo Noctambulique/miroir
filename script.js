@@ -20,7 +20,7 @@ const questions = [
     },
     {
         question: "Quelle est la maxime de l'utilitarisme ?",
-        answers: ["Le plus grand bien pour le plus grand nombre", "La vie est souffrance", "L'homme est une passion inutile", "Cogito ergo sum"],
+        answers: ["Le plus grand bien pour le plus grand nombre", "La vie est souffrance", "L'homme a des passions inutiles", "Cogito ergo sum"],
         correctAnswer: 0
     },
     {
@@ -30,7 +30,7 @@ const questions = [
     },
     {
         question: "Qu'est-ce que la volonté de puissance ?",
-        answers: ["Une volonté d'emprise", "Un concept de Nietzsche", "Un concept kantien", "Une notion d'hegelianisme"],
+        answers: ["Une volonté d'emprise", "Un concept de Nietzsche", "Un concept kantien", "Une notion d'hégélianisme"],
         correctAnswer: 1
     },
     {
@@ -75,7 +75,7 @@ const questions = [
     },
     {
         question: "Qu'est-ce que le nihilisme ?",
-        answers: ["La croyance en un sens de la vie", "L'absence de sens et de valeur universelle", "L'optimisme radical", "La croyance en un Dieu omnipotent"],
+        answers: ["La croyance en un sens à la vie", "L'absence de sens et de valeur universelle", "L'optimisme radical", "La croyance en un Dieu omnipotent"],
         correctAnswer: 1
     },
         {
